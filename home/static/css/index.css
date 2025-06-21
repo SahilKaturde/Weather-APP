@@ -1,0 +1,115 @@
+@import url('https://fonts.cdnfonts.com/css/gumok');
+@import url('https://fonts.cdnfonts.com/css/minecraft-3');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Gumok', sans-serif;
+  color: aliceblue;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+.page1{
+  width: 100%;
+  height: 100vh;
+  background-color: #353C44;
+}
+
+.box1{
+  width: 100%;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns:0.8fr 1.5fr 1.2fr ;
+  
+  gap: 2vh;
+  padding: 20px;
+}
+
+.box2{
+  width: 100%;
+  height: 50vh;
+
+  display: grid;
+  /* grid-template-columns: repeat(3,2fr); */
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 2vh;
+  padding: 20px;
+}
+
+.box1>div,.box2>div{
+  background-color: #1C2023;
+  border-radius: 2vh;
+}
+
+.div02{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-gap-override: 2vh;
+}
+
+select{
+  background-color: #353c440b;
+  backdrop-filter: 2px;
+  color: palegoldenrod;
+  font-size: 3.2vh;
+}
+
+option{
+  background-color: #1C2023;
+  backdrop-filter: blur(20px);
+  font-size: 3.2vh;
+  color:palegoldenrod ;
+}
+
+.div03{
+  background-size:cover ;
+  
+}
+
+.btn{
+  background-color: rgb(155, 240, 107);
+  border: none;
+  height: 3.1vh;
+  width: 3.1vh;
+  border-radius: 50%;
+}
+
+.btn:hover{
+  background-color: rgb(225, 54, 54);
+}
+
+.div01{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.temp_text{
+  font-family: 'Minecraft', sans-serif;
+}
+
+.div01>h2,.small_text{
+  font-family: monospace;
+}
+
+.div1,.div3,.div2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#name{
+  letter-spacing: 2px;
+}
+

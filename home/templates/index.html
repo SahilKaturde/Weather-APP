@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    </head>
+    <body>
+        <div class="page1">
+            <div class="box1">
+                <div class="div01">
+                    <h1 class="temp_text">{{temp}}°C</h1>
+                    <h2>TEMPRATURE</h2>
+                </div>
+
+                <div class="div02">
+                    <form method="POST" action="{% url 'homepage' %}">
+                        {% csrf_token %}
+                        <div class="d1">
+                            <label for="city"><h1>City Name</h1></label>
+                            <select id="city" name="city">
+                                <option disabled selected>Select a city</option>
+                                <option value="pune">Pune</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="jaipur">Jaipur</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="ahmedabad">Ahmedabad</option>
+                                <option value="nashik">Nashik</option>
+                                <option value="Rameswaram">Rameshwaram</option>
+                            </select>
+                            <button class="btn" type="submit"></button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="div03">
+                   
+                </div>
+                
+            </div>
+
+            <div class="box2">
+
+                <div class="div1">
+                    <h1 class="temp_text">{{wind_speed}} m/s</h1>
+                    <h2 class="small_text">WIND SPEED</h2>
+                </div>
+
+                <div class="div2">
+                    <h1 id="name">{{name_city}}</h1>
+                   <h2 id="name">WEATHER:- {{ weather_des }}</h2>
+                </div>
+
+
+                <div class="div3">
+                    <h1 class="temp_text">{{pressure}} hPa</h1>
+                    <h2 class="small_text">WIND SPEED</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="{%static 'javascript/index.js'%}"></script>
+</html>
