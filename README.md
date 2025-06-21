@@ -17,7 +17,7 @@ This is a simple yet functional Weather App built using **Django**, **JavaScript
 
 Here’s a screenshot of the application in action:
 
-![Weather App Screenshot](asset\weatherapp.PNG)
+![Weather App Screenshot](https://github.com/SahilKaturde/Weather-APP/blob/master/asset/weatherapp.PNG)
 
 ---
 
